@@ -1,0 +1,206 @@
+body {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.navdiv {
+  z-index: 1;
+  position: sticky;
+  top: 0px;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+.navdiv .titleLogo {
+  position: relative;
+  bottom: 6px;
+}
+.navdiv .titleLogo > img {
+  width: 80px;
+}
+.navdiv .titleLogo a {
+  text-decoration: none;
+}
+.navdiv .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px auto;
+  padding: 0 50px;
+  background-color: transparent;
+  vertical-align: middle;
+}
+.navdiv .navbar .navLeft {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* CSS */
+}
+.navdiv .navbar .navLeft #downloadButton {
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #12CFB1;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #12CFB1 0 -3px 0 inset;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  height: 30px;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: 20px;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+.navdiv .navbar .navLeft #downloadButton a {
+  text-decoration: none;
+}
+.navdiv .navbar .navLeft #downloadButton:focus {
+  box-shadow: #12CFB1 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #12CFB1 0 -3px 0 inset;
+}
+.navdiv .navbar .navLeft #downloadButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #12CFB1 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.navdiv .navbar .navLeft #downloadButton:active {
+  box-shadow: #12CFB1 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.navdiv .navbar .navLeft .menu {
+  display: flex;
+  gap: 10px;
+}
+.navdiv .navbar .navLeft .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navdiv .navbar .navLeft .menu li a {
+  display: block;
+  margin-left: 25px;
+  transition: 0.5s;
+  letter-spacing: 2px;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.navdiv .navbar .navLeft .menu li a:hover {
+  color: #64D6C9;
+  text-decoration: underline;
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  .navdiv .navbar .navLeft .menu {
+    display: none;
+    align-items: center;
+  }
+}
+@media all and (max-width: 768px) {
+  .navdiv .navbar .navLeft .menu {
+    display: none;
+    align-items: center;
+  }
+}
+.navdiv .navbar .navLeft .logo a span {
+  color: #12CFB1;
+}
+.navdiv .navbar .navLeft h1 {
+  color: black;
+  font-weight: bolder;
+  font-family: poppins;
+  cursor: pointer;
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  .navdiv .navbar .navLeft h1 {
+    margin: auto;
+  }
+}
+@media all and (max-width: 768px) {
+  .navdiv .navbar .navLeft h1 {
+    margin: auto;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  .navdiv .navbar .navLeft {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media all and (max-width: 768px) {
+  .navdiv .navbar .navLeft {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.navdiv .navbar #container {
+  display: none;
+  cursor: pointer;
+}
+.navdiv .navbar #container .bar1,
+.navdiv .navbar #container .bar2,
+.navdiv .navbar #container .bar3 {
+  background-color: black;
+  width: 30px;
+  height: 2px;
+  margin: 6px 0px;
+  transition: 0.5s;
+}
+.navdiv .navbar #container .bar1.change {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.navdiv .navbar #container .bar2.change {
+  opacity: 0;
+}
+.navdiv .navbar #container .bar3.change {
+  transform: rotate(45deg) translate(-5px, -3px);
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  .navdiv .navbar #container {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+  }
+}
+@media all and (max-width: 768px) {
+  .navdiv .navbar #container {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  .navdiv {
+    padding: 10px 0;
+  }
+}
+@media all and (max-width: 768px) {
+  .navdiv {
+    padding: 10px 0;
+  }
+}
+
+#demo-color-box {
+  width: 100px;
+  height: 60px;
+  background-color: lightgreen;
+}
+
+#demo-color-box2 {
+  width: 100px;
+  height: 60px;
+  background-color: darkmagenta;
+}
+
+#demo-color-box3 {
+  width: 100px;
+  height: 60px;
+  background-color: dodgerblue;
+}/*# sourceMappingURL=styles.css.map */
