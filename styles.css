@@ -411,4 +411,197 @@ html {
     width: 100%;
     gap: 20px;
   }
+}
+
+#projects {
+  width: 80%;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+#projects h1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  position: relative;
+}
+#projects h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+#projects h1:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#projects #projectSection {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 50px;
+}
+#projects #projectSection .project {
+  background-image: linear-gradient(120deg, #457b9d 0%, #98d5f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 10px;
+  background-position: 0 100%;
+  transition: background-size 0.25s ease-in;
+  border-radius: 10px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#projects #projectSection .project .projectScreenShot {
+  padding: 20px;
+  width: 40%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#projects #projectSection .project .projectScreenShot img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#projects #projectSection .project .projectScreenShot .liveLinks {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  transition: all 0.5s;
+}
+#projects #projectSection .project .projectScreenShot .liveLinks .gitHubLink, #projects #projectSection .project .projectScreenShot .liveLinks .liveLink {
+  display: flex;
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px;
+  transition: 0.5s;
+}
+#projects #projectSection .project .projectScreenShot .liveLinks .gitHubLink img, #projects #projectSection .project .projectScreenShot .liveLinks .liveLink img {
+  height: 25px;
+  box-shadow: none;
+  transition: 0.5s;
+}
+#projects #projectSection .project .projectScreenShot .liveLinks .gitHubLink p, #projects #projectSection .project .projectScreenShot .liveLinks .liveLink p {
+  width: 0;
+  opacity: 0;
+  scale: 0;
+  transition: 0.5s;
+}
+#projects #projectSection .project .projectScreenShot .liveLinks .gitHubLink p a, #projects #projectSection .project .projectScreenShot .liveLinks .liveLink p a {
+  text-decoration: none;
+}
+#projects #projectSection .project .projectScreenShot .liveLinks .gitHubLink:hover p, #projects #projectSection .project .projectScreenShot .liveLinks .liveLink:hover p {
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: all 0.5s;
+  padding: 0 10px;
+  opacity: 1;
+  scale: 1;
+}
+@media all and (max-width: 768px) {
+  #projects #projectSection .project .projectScreenShot {
+    width: 90%;
+    padding-bottom: 0;
+  }
+}
+#projects #projectSection .project .projectDescription {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  transition: color 0.5s;
+  background-color: transparent;
+}
+#projects #projectSection .project .projectDescription strong {
+  font-size: 17px;
+  text-align: left;
+  width: 100%;
+}
+#projects #projectSection .project .projectDescription span {
+  margin: 0 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: black;
+}
+#projects #projectSection .project .projectDescription .techStacks {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 80%;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
+#projects #projectSection .project .projectDescription .techStacks p {
+  display: none;
+}
+#projects #projectSection .project .projectDescription .techStacks img {
+  height: 50px;
+  width: 50px;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+#projects #projectSection .project .projectDescription .techStacks:hover {
+  background-color: white;
+}
+@media all and (max-width: 768px) {
+  #projects #projectSection .project .projectDescription .techStacks {
+    flex-wrap: wrap;
+  }
+}
+@media all and (max-width: 768px) {
+  #projects #projectSection .project .projectDescription {
+    width: 90%;
+    padding-top: 0;
+  }
+  #projects #projectSection .project .projectDescription h1 {
+    margin: 10px;
+  }
+}
+@media all and (max-width: 768px) {
+  #projects #projectSection .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#projects #projectSection .project:hover {
+  background-size: 100% 100%;
+}
+#projects #projectSection .project.alternate {
+  flex-direction: row-reverse;
+}
+@media all and (max-width: 768px) {
+  #projects #projectSection .project.alternate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media all and (max-width: 768px) {
+  #projects {
+    padding-top: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
