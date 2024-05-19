@@ -38,17 +38,16 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  /* CSS */
 }
 .navdiv .navbar .navLeft #downloadButton {
   align-items: center;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: #12CFB1;
+  background-color: rgb(216, 112, 219);
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #12CFB1 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(216, 112, 219) 0 -3px 0 inset;
   color: #36395A;
   cursor: pointer;
   display: inline-flex;
@@ -63,14 +62,14 @@ body {
   text-decoration: none;
 }
 .navdiv .navbar .navLeft #downloadButton:focus {
-  box-shadow: #12CFB1 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #12CFB1 0 -3px 0 inset;
+  box-shadow: rgb(216, 112, 219) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(216, 112, 219) 0 -3px 0 inset;
 }
 .navdiv .navbar .navLeft #downloadButton:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #12CFB1 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(216, 112, 219) 1 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 .navdiv .navbar .navLeft #downloadButton:active {
-  box-shadow: #12CFB1 0 3px 7px inset;
+  box-shadow: rgb(216, 112, 219) 0 3px 7px inset;
   transform: translateY(2px);
 }
 .navdiv .navbar .navLeft .menu {
@@ -83,7 +82,7 @@ body {
 }
 .navdiv .navbar .navLeft .menu li a {
   display: block;
-  margin-left: 25px;
+  margin-left: 20px;
   transition: 0.5s;
   letter-spacing: 2px;
   color: black;
@@ -92,7 +91,7 @@ body {
   transition: color 0.5s;
 }
 .navdiv .navbar .navLeft .menu li a:hover {
-  color: #64D6C9;
+  color: rgb(215, 108, 219);
   text-decoration: underline;
 }
 @media all and (min-width: 768px) and (max-width: 1007px) {
@@ -106,9 +105,6 @@ body {
     display: none;
     align-items: center;
   }
-}
-.navdiv .navbar .navLeft .logo a span {
-  color: #12CFB1;
 }
 .navdiv .navbar .navLeft h1 {
   color: black;
@@ -185,22 +181,4 @@ body {
   .navdiv {
     padding: 10px 0;
   }
-}
-
-#demo-color-box {
-  width: 100px;
-  height: 60px;
-  background-color: lightgreen;
-}
-
-#demo-color-box2 {
-  width: 100px;
-  height: 60px;
-  background-color: darkmagenta;
-}
-
-#demo-color-box3 {
-  width: 100px;
-  height: 60px;
-  background-color: dodgerblue;
 }/*# sourceMappingURL=styles.css.map */

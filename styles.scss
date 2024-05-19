@@ -37,20 +37,14 @@ body{
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
-                // button {
-                //         padding: 0 30px;
-                //         height: 30px;
-                //         cursor: pointer;
-                //     }
                                        
-                                        /* CSS */
                 #downloadButton {
                     align-items: center;
                     appearance: none;
-                    background-color: #12CFB1;
+                    background-color: rgb(216, 112, 219) ;
                     border-radius: 4px;
                     border-width: 0;
-                    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #12CFB1 0 -3px 0 inset;
+                    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(216, 112, 219)  0 -3px 0 inset;
                     // box-sizing: border-box;
                     color: #36395A;
                     cursor: pointer;
@@ -67,32 +61,29 @@ body{
                 }
 
                 #downloadButton:focus {
-                    box-shadow: #12CFB1 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #12CFB1 0 -3px 0 inset;
+                    box-shadow: rgb(216, 112, 219)  0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(216, 112, 219)  0 -3px 0 inset;
                 }
 
                 #downloadButton:hover {
-                    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #12CFB1 0 -3px 0 inset;
+                    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(216, 112, 219) 1 0 -3px 0 inset;
                     transform: translateY(-2px);
                 }
 
                 #downloadButton:active {
-                    box-shadow: #12CFB1 0 3px 7px inset;
+                    box-shadow: rgb(216, 112, 219)  0 3px 7px inset;
                     transform: translateY(2px);
                 }
                 
                     .menu {
                         display: flex;
                         gap: 10px;
-                        // transition: 2s;
                 
                         li {
                             list-style: none;
-                            display: inline-block;
-                            // transition: 2s;
-                
+                            display: inline-block;                
                             a {
                                 display: block;
-                                margin-left: 25px;
+                                margin-left: 20px;
                                 transition: .5s;
                                 letter-spacing: 2px;
                                 color: black;
@@ -102,7 +93,7 @@ body{
                             }
                 
                             a:hover {
-                                color: #64D6C9;
+                                color: rgb(215, 108, 219) ;
                                 text-decoration: underline;
                 
                             }
@@ -118,10 +109,10 @@ body{
                         }
                     }
                 
-                    .logo a span {
-                        color: #12CFB1;
-                        /// transition: all 0.3s ease;
-                    }
+                    // .logo a span {
+                    //     color: #12CFB1;
+                    //     /// transition: all 0.3s ease;
+                    // }
                 
                     h1 {
                         color: black;
@@ -146,41 +137,45 @@ body{
                 align-items: center; 
             }
             }
-            #container{ 
-            display: none; 
-            cursor: pointer; 
-            .bar1,
-            .bar2,
-            .bar3 {
-            background-color: black;
-            width: 30px;
-            height: 2px;
-            margin: 6px 0px;
-            transition: 0.5s;
-            }
-            .bar1.change {
+            #container {
+                display: none;
+                cursor: pointer;
+
+                .bar1,
+                .bar2,
+                .bar3 {
+                    background-color: black;
+                    width: 30px;
+                    height: 2px;
+                    margin: 6px 0px;
+                    transition: 0.5s;
+                }
+
+                .bar1.change {
                     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-                    transform: rotate(-45deg) translate(-9px, 6px); 
-            }
-        
-            .bar2.change  {
-                opacity: 0; 
-            }
-        
-            .bar3.change {
-            -webkit-transform: rotate(45deg) translate(-05px, -03px);
-            transform: rotate(45deg) translate(-05px, -03px); 
-            }
-            @media all and (min-width:768px) and (max-width:1007px) {
-                display: block;
+                    transform: rotate(-45deg) translate(-9px, 6px);
+                }
+
+                .bar2.change {
+                    opacity: 0;
+                }
+
+                .bar3.change {
+                    -webkit-transform: rotate(45deg) translate(-05px, -03px);
+                    transform: rotate(45deg) translate(-05px, -03px);
+                }
+
+                @media all and (min-width:768px) and (max-width:1007px) {
+                    display: block;
                     width: fit-content;
                     margin: 0;
-            }
-            @media all and (max-width:768px) { 
-                display: block; 
-                width: fit-content; 
-                margin: 0;
-            }
+                }
+
+                @media all and (max-width:768px) {
+                    display: block;
+                    width: fit-content;
+                    margin: 0;
+                }
             }
             
         }
@@ -194,18 +189,8 @@ body{
 
 }
 
-#demo-color-box{
-    width: 100px;
-    height: 60px;
-    background-color:lightgreen ;
-}
-#demo-color-box2{
-    width: 100px;
-    height: 60px;
-    background-color: darkmagenta ;
-}
-#demo-color-box3{
-    width: 100px;
-    height: 60px;
-    background-color:dodgerblue ;
-}
+// #demo-color-box2{
+//     width: 100px;
+//     height: 60px;
+//     background-color: rgb(195, 82, 199) ;
+// }
