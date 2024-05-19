@@ -181,4 +181,116 @@ body {
   .navdiv {
     padding: 10px 0;
   }
+}
+
+#typewriter2 > img {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+#home {
+  background-image: linear-gradient(-20deg, rgb(216, 112, 219) 0%, rgb(230, 157, 233) 100%);
+  padding: 20px 50px;
+  border-radius: 5px;
+  width: 85%;
+  margin: auto;
+}
+#home .intro {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+#home .intro .name {
+  width: 60%;
+  padding: 30px;
+}
+#home .intro .name .homeName {
+  font-size: 4rem;
+  text-wrap: wrap;
+  width: 50%;
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  #home .intro .name .homeName {
+    padding-left: 40px;
+    font-size: 2rem;
+    margin: auto;
+  }
+}
+@media all and (max-width: 768px) {
+  #home .intro .name .homeName {
+    font-size: 1.5rem;
+    margin: auto;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  #home .intro .name {
+    margin: auto;
+    width: 80%;
+  }
+}
+@media all and (max-width: 768px) {
+  #home .intro .name {
+    margin: auto;
+    width: 80%;
+  }
+}
+#home .intro .ppImage {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+#home .intro .ppImage img {
+  width: 130%;
+  border-radius: 5%;
+}
+@media all and (max-width: 768px) {
+  #home .intro .ppImage img {
+    width: 50%;
+    position: static;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  #home .intro .ppImage img {
+    width: 50%;
+    margin-bottom: 40px;
+    position: static;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  #home .intro .ppImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media all and (max-width: 768px) {
+  #home .intro .ppImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  #home .intro {
+    display: flex;
+  }
+}
+@media all and (max-width: 768px) {
+  #home .intro {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  #home {
+    padding: 0;
+    width: 100%;
+  }
+}
+@media all and (max-width: 768px) {
+  #home {
+    padding: 0;
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

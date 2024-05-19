@@ -194,3 +194,94 @@ body{
 //     height: 60px;
 //     background-color: rgb(195, 82, 199) ;
 // }
+
+#typewriter2>img{
+    // width: 100%;
+    // padding: 50px 0;
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+#home {
+    background-image: linear-gradient(-20deg, rgb(216, 112, 219) 0%, rgb(230, 157, 233) 100%);
+    padding: 20px 50px; 
+    border-radius: 5px;
+    width: 85%;
+    margin: auto;
+    .intro {
+        display: flex;
+        width: 100%; 
+        align-items: center;
+        .name {
+            width: 60%; 
+            padding: 30px; 
+            .homeName {
+                font-size: 4rem;
+                text-wrap: wrap;
+                width: 50%;
+            @media all and (min-width:768px) and (max-width:1007px) {
+                    padding-left: 40px;
+                    font-size: 2rem;
+                    margin: auto;
+                }
+            @media all and (max-width:768px) {
+                font-size: 1.5rem;
+                margin: auto;
+            }
+            }
+        @media all and (min-width:768px) and (max-width:1007px) {
+            margin: auto;
+            width: 80%;
+        }
+        @media all and (max-width:768px) {
+            margin: auto;
+             width: 80%;
+        }
+        }
+        .ppImage {
+        width: 25%;
+        display: flex;
+        align-items: center;
+            img { 
+                width: 130%;
+                border-radius: 5%;  
+            @media all and (max-width:768px) { 
+                        width: 50%;
+                        position: static; 
+            } 
+            @media all and (min-width:768px) and (max-width:1007px) {
+                width: 50%;
+                margin-bottom: 40px;
+                position: static;
+            }
+            }
+        @media all and (min-width:768px) and (max-width:1007px){
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        }
+        @media all and (max-width:768px) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        }
+    @media all and (min-width:768px) and (max-width:1007px){
+    display: flex;
+    // flex-direction: column-reverse;
+    }
+    @media all and (max-width:768px) {
+        display: flex; 
+        flex-direction: column-reverse;
+    }
+    }
+    @media all and (min-width:768px) and (max-width:1007px){
+    padding: 0;
+    width: 100%;
+    }
+    @media all and (max-width:768px) {
+        padding:  0;
+        width: 100%;
+    }  
+}
