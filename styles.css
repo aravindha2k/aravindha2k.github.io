@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navdiv {
   z-index: 1;
   position: sticky;
@@ -44,10 +48,10 @@ body {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: rgb(216, 112, 219);
+  background-color: #5a93b6;
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(216, 112, 219) 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #5a93b6 0 -3px 0 inset;
   color: #36395A;
   cursor: pointer;
   display: inline-flex;
@@ -62,15 +66,15 @@ body {
   text-decoration: none;
 }
 .navdiv .navbar .navLeft #downloadButton:focus {
-  box-shadow: rgb(216, 112, 219) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(216, 112, 219) 0 -3px 0 inset;
+  box-shadow: #5a93b6 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #5a93b6 0 -3px 0 inset;
 }
 .navdiv .navbar .navLeft #downloadButton:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(216, 112, 219) 1 0 -3px 0 inset;
-  transform: translateY(-2px);
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #5a93b6 1 0 -3px 0 inset;
+  transform: translateY(-3px);
 }
 .navdiv .navbar .navLeft #downloadButton:active {
-  box-shadow: rgb(216, 112, 219) 0 3px 7px inset;
-  transform: translateY(2px);
+  box-shadow: #5a93b6 0 3px 7px inset;
+  transform: translateY(3px);
 }
 .navdiv .navbar .navLeft .menu {
   display: flex;
@@ -91,7 +95,7 @@ body {
   transition: color 0.5s;
 }
 .navdiv .navbar .navLeft .menu li a:hover {
-  color: rgb(215, 108, 219);
+  color: #3e86b3;
   text-decoration: underline;
 }
 @media all and (min-width: 768px) and (max-width: 1007px) {
@@ -180,5 +184,231 @@ body {
 @media all and (max-width: 768px) {
   .navdiv {
     padding: 10px 0;
+  }
+}
+
+#demo-color-box2 {
+  width: 100px;
+  height: 60px;
+  background-color: #457b9d;
+}
+
+#typewriter2 > img {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+#home {
+  background-image: linear-gradient(-20deg, #457b9d 0%, #5b459d 100%);
+  padding: 20px 50px;
+  border-radius: 5px;
+  width: 85%;
+  margin: auto;
+}
+#home .intro {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+#home .intro .name {
+  width: 60%;
+  padding: 30px;
+}
+#home .intro .name .homeName {
+  font-size: 4rem;
+  text-wrap: wrap;
+  width: 50%;
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  #home .intro .name .homeName {
+    padding-left: 40px;
+    font-size: 2rem;
+    margin: auto;
+  }
+}
+@media all and (max-width: 768px) {
+  #home .intro .name .homeName {
+    font-size: 1.5rem;
+    margin: auto;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  #home .intro .name {
+    margin: auto;
+    width: 80%;
+  }
+}
+@media all and (max-width: 768px) {
+  #home .intro .name {
+    margin: auto;
+    width: 80%;
+  }
+}
+#home .intro .ppImage {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+#home .intro .ppImage img {
+  width: 130%;
+  border-radius: 5%;
+}
+@media all and (max-width: 768px) {
+  #home .intro .ppImage img {
+    width: 50%;
+    position: static;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  #home .intro .ppImage img {
+    width: 50%;
+    margin-bottom: 40px;
+    position: static;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  #home .intro .ppImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media all and (max-width: 768px) {
+  #home .intro .ppImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  #home .intro {
+    display: flex;
+  }
+}
+@media all and (max-width: 768px) {
+  #home .intro {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1007px) {
+  #home {
+    padding: 0;
+    width: 100%;
+  }
+}
+@media all and (max-width: 768px) {
+  #home {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+#about {
+  padding-bottom: 0;
+  padding-top: 100px;
+}
+#about h1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 15%;
+  display: block;
+  position: relative;
+  text-align: left;
+}
+#about h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #457b9d;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+#about h1:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#about > h3,
+#about > p {
+  width: 70%;
+  margin: auto;
+  padding: 20px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#skills2 {
+  padding: 20px 50px;
+  padding-top: 0;
+  text-align: center;
+}
+#skills2 h1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  position: relative;
+}
+#skills2 h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #457b9d;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+#skills2 h1:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#skills2 #skillsSection {
+  margin-top: 20px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#skills2 #skillsSection .singleSkill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.5s;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+#skills2 #skillsSection .singleSkill img {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+}
+#skills2 #skillsSection .singleSkill p {
+  position: relative;
+  top: 3px;
+  scale: 0;
+  transition: 0.5s;
+}
+#skills2 #skillsSection .singleSkill:hover {
+  transform: scale(1.2);
+}
+#skills2 #skillsSection .singleSkill:hover p {
+  scale: 1;
+  color: #457b9d;
+}
+@media all and (max-width: 768px) {
+  #skills2 #skillsSection {
+    width: 100%;
+    gap: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */

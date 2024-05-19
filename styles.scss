@@ -6,6 +6,9 @@ body{
     font-family: "Poppins", sans-serif;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .navdiv {
     z-index: 1;
@@ -41,10 +44,10 @@ body{
                 #downloadButton {
                     align-items: center;
                     appearance: none;
-                    background-color: rgb(216, 112, 219) ;
+                    background-color: #5a93b6 ;
                     border-radius: 4px;
                     border-width: 0;
-                    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(216, 112, 219)  0 -3px 0 inset;
+                    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #5a93b6  0 -3px 0 inset;
                     // box-sizing: border-box;
                     color: #36395A;
                     cursor: pointer;
@@ -61,17 +64,17 @@ body{
                 }
 
                 #downloadButton:focus {
-                    box-shadow: rgb(216, 112, 219)  0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(216, 112, 219)  0 -3px 0 inset;
+                    box-shadow: #5a93b6  0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #5a93b6  0 -3px 0 inset;
                 }
 
                 #downloadButton:hover {
-                    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(216, 112, 219) 1 0 -3px 0 inset;
-                    transform: translateY(-2px);
+                    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #5a93b6 1 0 -3px 0 inset;
+                    transform: translateY(-3px);
                 }
 
                 #downloadButton:active {
-                    box-shadow: rgb(216, 112, 219)  0 3px 7px inset;
-                    transform: translateY(2px);
+                    box-shadow: #5a93b6  0 3px 7px inset;
+                    transform: translateY(3px);
                 }
                 
                     .menu {
@@ -93,9 +96,8 @@ body{
                             }
                 
                             a:hover {
-                                color: rgb(215, 108, 219) ;
+                                color: #3e86b3 ;
                                 text-decoration: underline;
-                
                             }
                         }
                 
@@ -189,8 +191,206 @@ body{
 
 }
 
-// #demo-color-box2{
-//     width: 100px;
-//     height: 60px;
-//     background-color: rgb(195, 82, 199) ;
-// }
+#demo-color-box2{
+    width: 100px;
+    height: 60px;
+    background-color: #457b9d ;
+}
+
+#typewriter2>img{
+    // width: 100%;
+    // padding: 50px 0;
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+#home {
+    background-image: linear-gradient(-20deg, #457b9d 0%, #5b459d 100%);
+    padding: 20px 50px; 
+    border-radius: 5px;
+    width: 85%;
+    margin: auto;
+    .intro {
+        display: flex;
+        width: 100%; 
+        align-items: center;
+        .name {
+            width: 60%; 
+            padding: 30px; 
+            .homeName {
+                font-size: 4rem;
+                text-wrap: wrap;
+                width: 50%;
+            @media all and (min-width:768px) and (max-width:1007px) {
+                    padding-left: 40px;
+                    font-size: 2rem;
+                    margin: auto;
+                }
+            @media all and (max-width:768px) {
+                font-size: 1.5rem;
+                margin: auto;
+            }
+            }
+        @media all and (min-width:768px) and (max-width:1007px) {
+            margin: auto;
+            width: 80%;
+        }
+        @media all and (max-width:768px) {
+            margin: auto;
+             width: 80%;
+        }
+        }
+        .ppImage {
+        width: 25%;
+        display: flex;
+        align-items: center;
+            img { 
+                width: 130%;
+                border-radius: 5%;  
+            @media all and (max-width:768px) { 
+                        width: 50%;
+                        position: static; 
+            } 
+            @media all and (min-width:768px) and (max-width:1007px) {
+                width: 50%;
+                margin-bottom: 40px;
+                position: static;
+            }
+            }
+        @media all and (min-width:768px) and (max-width:1007px){
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        }
+        @media all and (max-width:768px) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        }
+    @media all and (min-width:768px) and (max-width:1007px){
+    display: flex;
+    // flex-direction: column-reverse;
+    }
+    @media all and (max-width:768px) {
+        display: flex; 
+        flex-direction: column-reverse;
+    }
+    }
+    @media all and (min-width:768px) and (max-width:1007px){
+    padding: 0;
+    width: 100%;
+    }
+    @media all and (max-width:768px) {
+        padding:  0;
+        width: 100%;
+    }  
+}
+
+#about {
+    // padding: 50px;
+    padding-bottom: 0;
+    padding-top: 100px;
+    h1{
+        width: fit-content; 
+        margin-left: 15%; 
+        display: block;
+        position: relative;
+        text-align: left;
+    }
+    h1::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #457b9d;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    h1:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        }
+    >h3,
+    >p {
+            width: 70%;
+            margin: auto;
+            padding: 20px 0;
+            font-family: "Poppins", sans-serif;
+        }
+}
+
+#skills2{
+    padding: 20px 50px; 
+    padding-top: 0;
+    text-align: center;
+    h1{
+            width: fit-content;
+            margin: 20px auto;
+            // padding: 20px ;
+            font-family: "Poppins", sans-serif;
+            display: inline-block;
+            position: relative;
+        }
+    h1::after {
+        content: '';    
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #457b9d;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    h1:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    #skillsSection {
+        margin-top: 20px;
+        width: 80%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        .singleSkill{
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            border-radius: 5px;
+            padding: 10px;
+            transition: .5s;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+                img {
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 5px;
+                }
+                p{
+                    position: relative;
+                    top: 3px;    
+                    scale:0; 
+                    transition: .5s; 
+                }
+            &:hover {
+                transform: scale(1.2); 
+                p {
+                    scale: 1;
+                    color: #457b9d;
+                }
+            }        
+        }
+        @media all and (max-width:768px) {
+        width: 100%; 
+        gap: 20px;
+        }
+    }
+}
