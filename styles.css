@@ -341,12 +341,12 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-#skills2 {
+#skills {
   padding: 20px 50px;
   padding-top: 0;
   text-align: center;
 }
-#skills2 h1 {
+#skills h1 {
   width: -moz-fit-content;
   width: fit-content;
   margin: 20px auto;
@@ -354,7 +354,7 @@ html {
   display: inline-block;
   position: relative;
 }
-#skills2 h1::after {
+#skills h1::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -366,20 +366,20 @@ html {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-#skills2 h1:hover::after {
+#skills h1:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-#skills2 #skillsSection {
+#skills #skillsSection {
   margin-top: 20px;
   width: 80%;
   margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
 }
-#skills2 #skillsSection .singleSkill {
+#skills #skillsSection .singleSkill {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -388,26 +388,26 @@ html {
   transition: 0.5s;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
-#skills2 #skillsSection .singleSkill img {
+#skills #skillsSection .singleSkill img {
   height: 100px;
   width: 100px;
   border-radius: 5px;
 }
-#skills2 #skillsSection .singleSkill p {
+#skills #skillsSection .singleSkill p {
   position: relative;
   top: 3px;
   scale: 0;
   transition: 0.5s;
 }
-#skills2 #skillsSection .singleSkill:hover {
+#skills #skillsSection .singleSkill:hover {
   transform: scale(1.2);
 }
-#skills2 #skillsSection .singleSkill:hover p {
+#skills #skillsSection .singleSkill:hover p {
   scale: 1;
   color: #457b9d;
 }
 @media all and (max-width: 768px) {
-  #skills2 #skillsSection {
+  #skills #skillsSection {
     width: 100%;
     gap: 20px;
   }

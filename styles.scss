@@ -324,7 +324,7 @@ html{
         }
 }
 
-#skills2{
+#skills{
     padding: 20px 50px; 
     padding-top: 0;
     text-align: center;
@@ -358,7 +358,7 @@ html{
         width: 80%;
         margin: auto;
         display: flex; 
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         gap: 20px;
         .singleSkill{
