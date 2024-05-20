@@ -14,9 +14,9 @@ document
 
     document.body.removeChild(link);
   });
-// document.getElementById("submit").addEventListener("click", function (e) {
-//   e.preventDefault();
-// });
+document.getElementById("submit").addEventListener("click", function (e) {
+  e.preventDefault();
+});
 const cont = document.getElementById("container");
 cont.addEventListener("click", () => {
   const bar1 = document.getElementsByClassName("bar1")[0];
@@ -83,10 +83,10 @@ navLinks.forEach((link) => {
 });
 
 window.addEventListener("scroll", function () {
-//   var goToTop = document.querySelector(".goToTop");
-//   if (window.pageYOffset > 500) {
-//     goToTop.style.opacity = "1";
-//   } else {
-//     goToTop.style.opacity = "0";
-//   }
+  var goToTop = document.querySelector(".goToTop");
+  if (window.pageYOffset > 500) {
+    goToTop.style.opacity = "1";
+  } else {
+    goToTop.style.opacity = "0";
+  }
 });
